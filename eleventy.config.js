@@ -171,6 +171,18 @@ export default function (eleventyConfig) {
         return Array.from(tags, (t) => `/blog/tag/${tagToUrl(t)}`).sort();
     });
 
+    // Seven old Tumblr-era posts have no title (matching Squarespace); lists
+    // fall back to the start of the post's text.
+    eleventyConfig.addFilter("listTitle", (post) => {
+        if (post.data.title) return post.data.title;
+        const text = (post.templateContent || "")
+            .replace(/<[^>]+>/g, " ")
+            .replace(/\s+/g, " ")
+            .trim();
+        if (!text) return "Untitled";
+        return text.length > 60 ? text.slice(0, 60).trimEnd() + "…" : text;
+    });
+
     eleventyConfig.addShortcode("year", () => String(new Date().getFullYear()));
 
     eleventyConfig.addFilter("head", (arr, n) => arr.slice(0, n));

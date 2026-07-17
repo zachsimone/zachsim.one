@@ -15,7 +15,7 @@ eleventyExcludeFromCollections: true
     {%- for post in tagEntry.posts %}
     <li>
         <time datetime="{{ post.date | w3cDate }}">{{ post.date | readableDate }}</time>
-        <a href="{{ post.url | canonical }}">{{ post.data.title }}</a>
+        <a href="{{ post.url | canonical }}">{{ post | listTitle }}</a>
     </li>
     {%- endfor %}
 </ul>
