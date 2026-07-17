@@ -12,7 +12,7 @@ npm run build    # output to _site/
 
 ## Writing a blog post
 
-Add a markdown file to `src/blog/`. Front matter:
+Add a markdown file to `src/blog/` named `YYYY-MM-DD-slug.md` (zero-padded, so files sort chronologically). The filename never affects the URL — that comes entirely from the `permalink` front matter. Front matter:
 
 ```yaml
 ---
@@ -31,6 +31,16 @@ Conventions (kept from Squarespace for URL consistency):
 - The permalink is `/blog/YYYY/M/D/slug.html` with **no zero-padding** on month or day. The `.html` suffix is required — Netlify serves the page at the extensionless URL (`/blog/2026/7/17/my-new-post`).
 - Dates are AEST/AEDT; include the UTC offset.
 - Post images live in `src/images/`.
+
+## Hiding a post
+
+Add `hidden: true` to a post's front matter to keep it in the repository without publishing it:
+
+- no page is generated for it;
+- it disappears from the blog index, tag pages, RSS feed, and sitemap;
+- images and `/s/` files referenced *only* by hidden posts are not copied to the published site (an asset also used by a visible post is kept).
+
+Remove the flag and rebuild to publish. This works for `src/blog/` and `src/microblog/` (see `blog.11tydata.js` and the `eleventy.after` asset sync in `eleventy.config.js`).
 
 ## URL preservation
 
