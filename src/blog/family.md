@@ -1,0 +1,15 @@
+---
+title: "Family"
+date: 2015-04-05T11:24:12+10:00
+permalink: "/blog/family.html"
+layout: layouts/post.njk
+tags: ["family"]
+image: "/images/1428197052000/image.png"
+---
+Late last night, I finished my shift at work and went out to the car only to find I’d left the lights on. Expectedly, the car didn’t start after multiple attempts. Fantastic… a flat battery. 
+
+I’m not going to write a long post detailing what happened, because that isn’t the interesting part. Long story short, it took nearly an hour for the NRMA roadside assist worker to arrive, and he spent about an hour diagnosing the battery, communicating with his warranty/insurance team who were eventually happy to replace the car battery for me under warranty. 
+
+The part of the night which really stood out for me and which I am most thankful for was that my dad was kind enough to drive down to my work and wait with me. This involved a tired man, who I’m sure would’ve preferred to be sleeping, staying with me for two hours - including the first half hour of his Easter holiday - waiting patiently, never complaining or getting angry. That’s what family is all about, and last night made me realise that. So dad, thank you once again and please know I can’t thank you enough. 
+
+One day I hope to be able to return many of the favours that my dad has done for me over the years.

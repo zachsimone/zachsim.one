@@ -1,0 +1,21 @@
+---
+pagination:
+  data: collections.tagList
+  size: 1
+  alias: tagEntry
+permalink: "/blog/tag/{{ tagEntry.name | tagToUrl }}.html"
+layout: layouts/base.njk
+eleventyComputed:
+  title: "Posts tagged “{{ tagEntry.name }}”"
+eleventyExcludeFromCollections: true
+---
+<h1>{{ tagEntry.name }}</h1>
+<p class="post-meta">{{ tagEntry.posts.length }} post{{ "s" if tagEntry.posts.length != 1 }} tagged “{{ tagEntry.name }}”. <a href="/blog">All posts →</a></p>
+<ul class="archive-list">
+    {%- for post in tagEntry.posts %}
+    <li>
+        <time datetime="{{ post.date | w3cDate }}">{{ post.date | readableDate }}</time>
+        <a href="{{ post.url | canonical }}">{{ post.data.title }}</a>
+    </li>
+    {%- endfor %}
+</ul>

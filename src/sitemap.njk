@@ -1,0 +1,21 @@
+---
+permalink: /sitemap.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    {%- for item in collections.all %}
+    {%- set canonicalPath = item.url | canonical %}
+    {%- if canonicalPath != "/404" %}
+    <url>
+        <loc>{{ site.url }}{{ canonicalPath }}</loc>
+        <lastmod>{{ item.date | w3cDate }}</lastmod>
+    </url>
+    {%- endif %}
+    {%- endfor %}
+    {%- for tagPage in collections.tagPageUrls %}
+    <url>
+        <loc>{{ site.url }}{{ tagPage }}</loc>
+    </url>
+    {%- endfor %}
+</urlset>

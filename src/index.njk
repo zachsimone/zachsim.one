@@ -1,0 +1,22 @@
+---
+layout: layouts/base.njk
+permalink: /index.html
+---
+<div class="home-intro">
+    <h1>👋 Welcome!</h1>
+    <p>I'm Zach, an iOS developer from Sydney, Australia. I write about Apple platforms,
+    Swift, and the apps I build on <a href="/blog">the blog</a>, and you can see what
+    I've shipped over on <a href="/projects">projects</a>.</p>
+</div>
+<div class="recent-posts">
+    <h2>Recent posts</h2>
+    <ul class="archive-list">
+        {%- for post in collections.posts | head(8) %}
+        <li>
+            <time datetime="{{ post.date | w3cDate }}">{{ post.date | readableDate }}</time>
+            <a href="{{ post.url | canonical }}">{{ post.data.title }}</a>
+        </li>
+        {%- endfor %}
+    </ul>
+    <p><a href="/blog">All posts →</a></p>
+</div>

@@ -1,0 +1,15 @@
+---
+layout: layouts/base.njk
+title: Microblog
+permalink: /microblog.html
+---
+<h1>Microblog</h1>
+{%- for post in collections.microblogPosts %}
+<article class="post">
+    <p class="post-meta">
+        <a href="{{ post.url | canonical }}"><time datetime="{{ post.date | w3cDate }}">{{ post.date | readableDate }}</time></a>
+        · {{ site.author }}
+    </p>
+    {{ post.templateContent | safe }}
+</article>
+{%- endfor %}

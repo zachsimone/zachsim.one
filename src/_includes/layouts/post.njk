@@ -1,0 +1,25 @@
+---
+layout: layouts/base.njk
+isPost: true
+---
+<article class="post">
+    <header class="post-header">
+        {%- if title %}
+        <h1>{{ title }}</h1>
+        {%- endif %}
+        <p class="post-meta">
+            <time datetime="{{ page.date | isoDate }}">{{ page.date | readableDate }}</time>
+            · {{ site.author }}
+        </p>
+    </header>
+    {{ content | safe }}
+    {%- if tags and tags.length %}
+    <footer class="post-tags">
+        <p>Tagged:
+        {%- for tag in tags %}
+            <a href="/blog/tag/{{ tag | tagToUrl }}">{{ tag }}</a>{{ "," if not loop.last }}
+        {%- endfor %}
+        </p>
+    </footer>
+    {%- endif %}
+</article>

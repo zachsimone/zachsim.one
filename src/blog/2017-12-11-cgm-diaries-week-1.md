@@ -1,0 +1,32 @@
+---
+title: "CGM Diaries: Week 1"
+date: 2017-12-11T21:29:25.507+11:00
+permalink: "/blog/2017/12/11/cgm-diaries-week-1.html"
+layout: layouts/post.njk
+image: "/images/1512988192014/image.png"
+---
+I've now spent a week living with a continuous glucose monitor (CGM). I've got a lot of thoughts, but it's safe to say that it's nothing short of amazing. CGM is a transformative technology for people with type 1 diabetes. I've been amazed by the accuracy of the sensor, how unobtrusive the design is, and how useful it has become to know my almost real-time glucose level. I wrote about it extensively in the first few days, which you can read [here](https://www.zachsim.one/blog/2017/12/4/cgm-diaries-day-1), [here](https://www.zachsim.one/blog/2017/12/5/cgm-diaries-day-2), and [here](https://www.zachsim.one/blog/2017/12/6/cgm-diaries-day-3). I'll try not to recap any of that in this post.
+
+#### What I've learnt
+
+It's been quite impressive to witness glucose levels spiking right after certain meals, and not others. While this has undauntedly been happening for years, it's the type of things you don't notice when you're taking intermittent glucose readings. It can be frustrating to watch the reading rise while knowing it might be an hour before it starts to fall again. I [Tweeted](https://twitter.com/zachsimone/status/938348806042656768) saying that I'm considering not eating carbs again, mainly to avoid these spikes. The Tweet was hyperbole, but it has made me start to reconsider certain food choices. For example, a bowl of Weet-Bix in the morning will likely be replaced with toast as it doesn't have such a negative impact on my levels. It's also been positive to learn that the Dexcom CGM is accurate. It requires two manual calibrations per day, and most of these have given readings within 0.5 mmol/L of what the Dexcom is showing.
+
+##### What's useful
+
+Near real-time glucose data is truly transformative. It takes the guesswork out of managing diabetes and means I can choose to take action on my glucose levels at almost any time. Feeling a bit on the high side? A quick glance at the watch will either confirm or disprove this feeling, and means I can take action if necessary. It's also reassuring to be able to check my Apple Watch in the middle of the night and know I'll get an instant reading. There are times when the reading is not bad enough to have triggered an alarm, but the fact I'm half awake means I can glance at the reading and decide whether to give insulin. [Despite my dislike for alarms on the phone during the day](https://twitter.com/zachsimone/status/937847791044378625), they're great overnight. It's useful to me alerted overnight when my levels aren't great. While not a life-saving advantage, another is being able to leave the manual finger pricker at home. It's one less thing to carry and worry about, and one less thing to awkwardly take out and use in public. With a glance at my wrist, I can discreetly check my glucose level, and move on with life.
+
+##### The sensor
+
+The physical design of the sensor is bulky, but despite this, it is less noticeable in most situations than the smaller connection for the cannula of an insulin pump. It's easy to brush against, especially when placed in the stomach, but the tape holding it in place is strong, and it isn't easy to knock out. It's also more comfortable than the pump connection, as it's hardly noticeable when sleeping. I did mention last week that it is slightly uncomfortable in the car as it brushes against the seat belt, and also while running. The former is still true, the latter not so much. Perhaps it just took some getting used to. I've also spent some time swimming at the beach these last few days, and it hasn't been an issue there either.
+
+#### Changing the sensor
+
+Since the sensor had been in for a week, it was time to change it this morning. The Dexcom app alerted me to this by sending multiple notifications this morning informing me the sensor would cease to work at precisely 10:20 am, and that it was time to replace it. There are two parts to the CGM. There's the sensor itself which sits just underneath the skin. This needs to be removed every week and replaced. There's also the transmitter, which is connected to the sensor. It sits on the outside and is what crunches the data, and sends it back to the phone. The transmitter lasts about three months, so it is retained and connected to the next sensor. Pulling it out is straightforward enough. Once the tape around the edges is removed, the sensor slides out easily. Unlike an insulin pump cannula, it hasn't left much of a mark on the skin. Once it's out, the insertion process begins again (on the other side of the stomach). As was the case with the initial insertion, it requires two hours for the new sensor to "warm up." Once that time has elapsed, two consecutive manual blood glucose readings are needed to calibrate the sensor, and then the CGM is back in business.
+
+#### Time away
+
+It's not always practical to be within Bluetooth range of your phone. It's happened a few times during the last week that I've not been nearby my phone for a few hours at a time. The transmitter simply stores a history of these readings every five minutes as it otherwise would, and sends them across with the first sync after your phone and Dexcom establish a connection again. It works reliably, and to my knowledge hasn't missed a single reading all week.
+
+That's been the first week. I am enjoying having access to the real-time data a CGM provides, and the way that it can help me make informed choices when trying to control my glucose levels. The Dexcom app now lives on the home screen of my phone, and as a complication on my Apple Watch face. It's incredibly useful to have access to this information, and Dexcom's app is impressively reliable.
+
+*If you're reading this and reside in Australia, I'd really appreciate it if you took a moment to fill out a form [here](https://daniifoundation.good.do/cgm4all/CGM_4_ALL/). It sends a letter to your local member of parliament requesting funding for CGM technology for everyone in Australia who needs it, and not just those under 21 years of age 21 as is currently the case. I wrote a letter and sent it tonight, and would really appreciate support from others. If you've got any questions, I'd be more than happy to answer. You can ask me question via the form [here](https://www.zachsim.one/contact), or on [Twitter](https://twitter.com/zachsimone).*

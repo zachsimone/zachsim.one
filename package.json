@@ -1,0 +1,16 @@
+{
+    "name": "zachsim.one",
+    "version": "1.0.0",
+    "description": "Personal website and blog of Zach Simone",
+    "private": true,
+    "scripts": {
+        "build": "eleventy",
+        "serve": "eleventy --serve",
+        "clean": "rm -rf _site"
+    },
+    "author": "Zach Simone",
+    "devDependencies": {
+        "@11ty/eleventy": "^3.1.2",
+        "luxon": "^3.5.0"
+    }
+}
