@@ -3,6 +3,7 @@
     "version": "1.0.0",
     "description": "Personal website and blog of Zach Simone",
     "private": true,
+    "type": "module",
     "scripts": {
         "build": "eleventy",
         "serve": "eleventy --serve",
