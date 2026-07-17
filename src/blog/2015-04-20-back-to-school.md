@@ -3,6 +3,7 @@ title: "\"Back to school\""
 date: 2015-04-20T19:45:12+10:00
 permalink: "/blog/back-to-school.html"
 layout: layouts/post.njk
+hidden: true
 image: "/images/1429523112000/image.png"
 ---
 Those three words are never too fun to hear.  

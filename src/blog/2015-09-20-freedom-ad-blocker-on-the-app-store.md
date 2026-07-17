@@ -3,6 +3,7 @@ title: "Freedom - ad blocker on the App Store"
 date: 2015-09-20T11:56:27+10:00
 permalink: "/blog/freedom-ad-blocker-on-the-app-store.html"
 layout: layouts/post.njk
+hidden: true
 tags: ["Freedom"]
 image: "/images/1442714187000/image.png"
 ---

@@ -3,6 +3,7 @@ title: "Piracy, “is as dumb as,” and movies"
 date: 2015-11-14T12:30:53+11:00
 permalink: "/blog/piracy-is-as-dumb-as-and-movies.html"
 layout: layouts/post.njk
+hidden: true
 tags: ["piracy"]
 image: "/images/1447464653000/image.png"
 ---

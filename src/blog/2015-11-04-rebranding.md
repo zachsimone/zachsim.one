@@ -3,6 +3,7 @@ title: "Rebranding"
 date: 2015-11-04T11:01:07+11:00
 permalink: "/blog/rebranding.html"
 layout: layouts/post.njk
+hidden: true
 image: "/images/1446595267000/image.png"
 ---
 During what is a time of already great change, I am now saying goodbye to “ZachApps”…

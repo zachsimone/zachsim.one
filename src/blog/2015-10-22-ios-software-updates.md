@@ -3,6 +3,7 @@ title: "iOS Software Updates"
 date: 2015-10-22T22:06:18+11:00
 permalink: "/blog/ios-software-updates.html"
 layout: layouts/post.njk
+hidden: true
 tags: ["iOS","Software updates"]
 image: "/images/1445511978000/image.webp"
 ---

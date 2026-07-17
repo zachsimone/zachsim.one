@@ -3,6 +3,7 @@ title: "What a Time to Be Alive"
 date: 2016-10-05T22:30:38+11:00
 permalink: "/blog/what-a-time-to-be-alive.html"
 layout: layouts/post.njk
+hidden: true
 image: "/images/1475667038000/image.png"
 ---
 # What a time.

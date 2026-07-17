@@ -20,7 +20,8 @@
     to = "/"
     status = 301
 
-# Tag archives that exist in the Squarespace sitemap but contain no posts.
+# Tag archives that exist in the Squarespace sitemap but contain no posts
+# (either empty on Squarespace, or all their posts are now hidden).
 [[redirects]]
     from = "/blog/tag/design"
     to = "/blog"
@@ -68,5 +69,105 @@
 
 [[redirects]]
     from = "/blog/tag/gay%C2%A0marriage"
+    to = "/blog"
+    status = 301
+
+[[redirects]]
+    from = "/blog/tag/Apple+Music"
+    to = "/blog"
+    status = 301
+
+[[redirects]]
+    from = "/blog/tag/ATAR"
+    to = "/blog"
+    status = 301
+
+[[redirects]]
+    from = "/blog/tag/data"
+    to = "/blog"
+    status = 301
+
+[[redirects]]
+    from = "/blog/tag/facebook"
+    to = "/blog"
+    status = 301
+
+[[redirects]]
+    from = "/blog/tag/family"
+    to = "/blog"
+    status = 301
+
+[[redirects]]
+    from = "/blog/tag/Freedom"
+    to = "/blog"
+    status = 301
+
+[[redirects]]
+    from = "/blog/tag/Galaxy"
+    to = "/blog"
+    status = 301
+
+[[redirects]]
+    from = "/blog/tag/galaxy+s5"
+    to = "/blog"
+    status = 301
+
+[[redirects]]
+    from = "/blog/tag/galaxy+s6"
+    to = "/blog"
+    status = 301
+
+[[redirects]]
+    from = "/blog/tag/HSC"
+    to = "/blog"
+    status = 301
+
+[[redirects]]
+    from = "/blog/tag/iOS"
+    to = "/blog"
+    status = 301
+
+[[redirects]]
+    from = "/blog/tag/Kindle"
+    to = "/blog"
+    status = 301
+
+[[redirects]]
+    from = "/blog/tag/mark+zuckerberg"
+    to = "/blog"
+    status = 301
+
+[[redirects]]
+    from = "/blog/tag/NSW"
+    to = "/blog"
+    status = 301
+
+[[redirects]]
+    from = "/blog/tag/piracy"
+    to = "/blog"
+    status = 301
+
+[[redirects]]
+    from = "/blog/tag/Road+Safety"
+    to = "/blog"
+    status = 301
+
+[[redirects]]
+    from = "/blog/tag/S6"
+    to = "/blog"
+    status = 301
+
+[[redirects]]
+    from = "/blog/tag/Samsung"
+    to = "/blog"
+    status = 301
+
+[[redirects]]
+    from = "/blog/tag/sleep"
+    to = "/blog"
+    status = 301
+
+[[redirects]]
+    from = "/blog/tag/Software+updates"
     to = "/blog"
     status = 301

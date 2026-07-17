@@ -3,6 +3,7 @@ title: "Introducing Freedom"
 date: 2015-09-15T17:00:55+10:00
 permalink: "/blog/introducing-freedom.html"
 layout: layouts/post.njk
+hidden: true
 tags: ["Freedom"]
 image: "/images/1442300455000/image.png"
 ---

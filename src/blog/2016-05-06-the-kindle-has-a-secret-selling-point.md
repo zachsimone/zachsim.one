@@ -3,6 +3,7 @@ title: "The Kindle has a secret selling point"
 date: 2016-05-06T21:44:33+10:00
 permalink: "/blog/the-kindle-has-a-secret-selling-point.html"
 layout: layouts/post.njk
+hidden: true
 tags: ["Kindle"]
 image: "/images/1462535073000/image.png"
 ---

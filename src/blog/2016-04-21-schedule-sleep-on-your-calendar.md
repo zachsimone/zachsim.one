@@ -3,6 +3,7 @@ title: "Schedule sleep on your calendar"
 date: 2016-04-21T20:29:22+10:00
 permalink: "/blog/schedule-sleep-on-your-calendar.html"
 layout: layouts/post.njk
+hidden: true
 tags: ["sleep"]
 image: "/images/1461234562000/image.png"
 ---

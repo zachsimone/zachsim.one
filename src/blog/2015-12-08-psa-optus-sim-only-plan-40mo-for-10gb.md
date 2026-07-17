@@ -3,6 +3,7 @@ title: "PSA: Optus SIM-only plan - $40/mo for 10GB"
 date: 2015-12-08T12:05:34+11:00
 permalink: "/blog/psa-optus-sim-only-plan-40mo-for-10gb.html"
 layout: layouts/post.njk
+hidden: true
 tags: ["Optus","Telco","data"]
 image: "/images/1449536734000/image.webp"
 ---

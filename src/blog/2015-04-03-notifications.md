@@ -3,6 +3,7 @@ title: "Notifications"
 date: 2015-04-03T21:48:59+11:00
 permalink: "/blog/notifications.html"
 layout: layouts/post.njk
+hidden: true
 image: "/images/1428058139000/image.png"
 ---
 Stop and think. How many times a day does your phone beep or buzz? Too many? I think that’s the answer for most people these days.

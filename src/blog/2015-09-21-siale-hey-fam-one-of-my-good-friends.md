@@ -3,6 +3,7 @@ title: ""
 date: 2015-09-21T08:19:21+10:00
 permalink: "/blog/siale-hey-fam-one-of-my-good-friends.html"
 layout: layouts/post.njk
+hidden: true
 image: "/images/1442787561000/image.png"
 ---
 ![tumblr\_nuz7zqbiuP1u9jv50o1\_1280.jpg](/images/1479421800289-SHLK9IKILGQNF7JW8CL6/tumblr_nuz7zqbiuP1u9jv50o1_1280.jpg)

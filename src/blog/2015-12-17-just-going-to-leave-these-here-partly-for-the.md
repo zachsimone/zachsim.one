@@ -3,6 +3,7 @@ title: ""
 date: 2015-12-17T16:08:18+11:00
 permalink: "/blog/just-going-to-leave-these-here-partly-for-the.html"
 layout: layouts/post.njk
+hidden: true
 tags: ["HSC","ATAR"]
 image: "/images/1450328898000/image.png"
 ---

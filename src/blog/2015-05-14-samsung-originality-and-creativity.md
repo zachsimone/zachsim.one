@@ -3,6 +3,7 @@ title: "Samsung - originality and creativity"
 date: 2015-05-14T19:00:51+10:00
 permalink: "/blog/samsung-originality-and-creativity.html"
 layout: layouts/post.njk
+hidden: true
 tags: ["Samsung","Apple","Galaxy","S6","galaxy s5","galaxy s6","iPhone"]
 image: "/images/1431594051000/image.png"
 ---

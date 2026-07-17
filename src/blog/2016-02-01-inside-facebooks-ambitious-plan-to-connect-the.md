@@ -3,6 +3,7 @@ title: "Inside Facebook’s Ambitious Plan to Connect the Whole World"
 date: 2016-02-01T23:00:40+11:00
 permalink: "/blog/inside-facebooks-ambitious-plan-to-connect-the.html"
 layout: layouts/post.njk
+hidden: true
 tags: ["mark zuckerberg","facebook"]
 image: "/images/1454328040000/image.png"
 ---

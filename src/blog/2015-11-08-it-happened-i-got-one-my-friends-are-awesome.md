@@ -3,6 +3,7 @@ title: ""
 date: 2015-11-08T21:17:53+11:00
 permalink: "/blog/it-happened-i-got-one-my-friends-are-awesome.html"
 layout: layouts/post.njk
+hidden: true
 image: "/images/1446977873000/image.png"
 ---
 ![tumblr\_nxhr9wgtNE1ures6ao2\_r1\_1280.png](/images/1479421797454-JPTTPFXMHAHW2TT81FT5/tumblr_nxhr9wgtNE1ures6ao2_r1_1280.png)

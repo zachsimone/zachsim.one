@@ -3,6 +3,7 @@ title: "Apple Music offline"
 date: 2016-01-23T10:44:00+11:00
 permalink: "/blog/apple-music-offline.html"
 layout: layouts/post.njk
+hidden: true
 tags: ["Apple Music"]
 image: "/images/1453506240000/image.webp"
 ---
