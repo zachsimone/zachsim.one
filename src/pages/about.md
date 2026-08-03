@@ -4,7 +4,7 @@ permalink: /about.html
 layout: layouts/page.njk
 description: "About Zach Simone, an iOS developer from Sydney, Australia."
 ---
-![Hi, I'm Zach. 👋🏻](/images/1529112669195-VQ5QN3G24UZAPEWKP2TE/Current.jpg)
+<img src="/images/1529112669195-VQ5QN3G24UZAPEWKP2TE/Current.jpg" alt="Hi, I'm Zach. 👋🏻" class="portrait">
 
 # About
 

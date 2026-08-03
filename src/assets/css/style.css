@@ -200,6 +200,12 @@ pre code {
     min-width: 5.5rem;
 }
 
+.portrait {
+    max-width: 11rem;
+    border-radius: 10px;
+    margin-top: 1rem;
+}
+
 .home-intro {
     margin: 3rem 0;
 }
