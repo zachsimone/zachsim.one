@@ -1,5 +1,5 @@
 ---
-title: "Petty 7.1: Tomorrow's Prices for WA &amp; CarPlay Map Improvements"
+title: "Petty 7.1: Tomorrow's Prices for WA & CarPlay Map Improvements"
 date: 2024-03-05T08:00:00.566+11:00
 permalink: "/blog/2024/3/5/petty-71-tomorrow-prices-wa.html"
 layout: layouts/post.njk

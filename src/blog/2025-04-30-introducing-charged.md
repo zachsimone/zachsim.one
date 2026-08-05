@@ -4,6 +4,7 @@ date: 2025-04-30T03:00:00.855+10:00
 permalink: "/blog/2025/4/30/introducing-charged.html"
 layout: layouts/post.njk
 image: "/images/1745720384811-G51YMEH7W4HZARRK829J/02_Hero.png"
+hidden: true
 ---
 Today, I am excited to be introducing [Charged](https://chargedup.app). Charged is a new iOS app for drivers of electric vehicles (EV's) around the world, helping them find available chargers.
 
