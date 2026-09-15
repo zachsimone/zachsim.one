@@ -129,13 +129,17 @@ export default function (eleventyConfig) {
     );
 
     // The Squarespace site's canonical URLs have no .html suffix and no
-    // trailing slash; Netlify serves foo.html for /foo.
+    // trailing slash; Cloudflare serves foo.html for /foo.
     eleventyConfig.addFilter("canonical", (url) => {
         // hidden pages (permalink: false) still render; their page.url is false
         if (typeof url !== "string" || url === "") return "";
         if (url === "/" || url === "/index.html") return "/";
         return url.replace(/\/index\.html$/, "").replace(/\.html$/, "");
     });
+
+    eleventyConfig.addFilter("encodePathSegments", (path) =>
+        path.split("/").map(encodeURIComponent).join("/")
+    );
 
     eleventyConfig.addCollection("posts", (api) =>
         api.getFilteredByGlob("src/blog/*.md").sort((a, b) => b.date - a.date)

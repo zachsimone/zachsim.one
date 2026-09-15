@@ -1,0 +1,54 @@
+---
+permalink: /_redirects
+eleventyExcludeFromCollections: true
+---
+# Duplicate homepage that Squarespace kept in the sitemap.
+/zachsimone-home-1 / 301
+
+# Tag archives that exist in the Squarespace sitemap but contain no posts
+# (either empty on Squarespace, or all their posts are now hidden).
+/blog/tag/design /blog 301
+/blog/tag/9to5mac /blog 301
+/blog/tag/ANZAC /blog 301
+/blog/tag/economics /blog 301
+/blog/tag/Piracy /blog 301
+/blog/tag/streaming /blog 301
+/blog/tag/return+of+kings /blog 301
+/blog/tag/free+speech /blog 301
+/blog/tag/Dallas+Buyers+Club /blog 301
+/blog/tag/gay%C2%A0marriage /blog 301
+/blog/tag/Apple+Music /blog 301
+/blog/tag/ATAR /blog 301
+/blog/tag/data /blog 301
+/blog/tag/facebook /blog 301
+/blog/tag/family /blog 301
+/blog/tag/Freedom /blog 301
+/blog/tag/Galaxy /blog 301
+/blog/tag/galaxy+s5 /blog 301
+/blog/tag/galaxy+s6 /blog 301
+/blog/tag/HSC /blog 301
+/blog/tag/iOS /blog 301
+/blog/tag/Kindle /blog 301
+/blog/tag/mark+zuckerberg /blog 301
+/blog/tag/NSW /blog 301
+/blog/tag/piracy /blog 301
+/blog/tag/Road+Safety /blog 301
+/blog/tag/S6 /blog 301
+/blog/tag/Samsung /blog 301
+/blog/tag/sleep /blog 301
+/blog/tag/Software+updates /blog 301
+
+{# Cloudflare 307-redirects any path not in per-segment encodeURIComponent form
+   (e.g. Apple+Watch to Apple%2BWatch) before serving it; without these rewrites
+   every tag URL containing + stops serving at its Squarespace URL. #}
+{%- for item in collections.all %}
+{%- set path = item.url | canonical %}
+{%- if path and path != (path | encodePathSegments) %}
+{{ path }} {{ path | encodePathSegments }} 200
+{%- endif %}
+{%- endfor %}
+{%- for path in collections.tagPageUrls %}
+{%- if path != (path | encodePathSegments) %}
+{{ path }} {{ path | encodePathSegments }} 200
+{%- endif %}
+{%- endfor %}

@@ -1,6 +1,6 @@
 # zachsim.one
 
-Personal website and blog, statically generated with [Eleventy](https://www.11ty.dev) and hosted on Netlify. Migrated from Squarespace in July 2026 with all URLs preserved.
+Personal website and blog, statically generated with [Eleventy](https://www.11ty.dev) and hosted on Cloudflare Workers. Migrated from Squarespace in July 2026 with all URLs preserved.
 
 ## Development
 
@@ -8,6 +8,7 @@ Personal website and blog, statically generated with [Eleventy](https://www.11ty
 npm install
 npm run serve    # local dev server at http://localhost:8080
 npm run build    # output to _site/
+npx wrangler dev # serve _site/ as Cloudflare will, with redirects, at http://localhost:8787
 ```
 
 ## Writing a blog post
@@ -28,7 +29,7 @@ image: "/images/optional/og-image.png"
 
 Conventions (kept from Squarespace for URL consistency):
 
-- The permalink is `/blog/YYYY/M/D/slug.html` with **no zero-padding** on month or day. The `.html` suffix is required — Netlify serves the page at the extensionless URL (`/blog/2026/7/17/my-new-post`).
+- The permalink is `/blog/YYYY/M/D/slug.html` with **no zero-padding** on month or day. The `.html` suffix is required — Cloudflare serves the page at the extensionless URL (`/blog/2026/7/17/my-new-post`).
 - Dates are AEST/AEDT; include the UTC offset.
 - Post images live in `src/images/`.
 
@@ -47,19 +48,20 @@ Remove the flag and rebuild to publish. This works for `src/blog/` and `src/micr
 Every URL from the Squarespace sitemap (250 URLs) is preserved:
 
 - 125 blog posts across both historical URL formats (`/blog/slug` and `/blog/YYYY/M/D/slug`), with original publish timestamps.
-- 94 tag archives at `/blog/tag/Tag+Name` (Squarespace's `+`-for-space encoding). Ten tag URLs that were empty on Squarespace 301 to `/blog` (see `netlify.toml`).
-- The RSS feed subscribers used at `/blog?format=rss` 301s to `/blog/rss.xml`.
+- 94 tag archives at `/blog/tag/Tag+Name` (Squarespace's `+`-for-space encoding). Ten tag URLs that were empty on Squarespace 301 to `/blog` (see `src/redirects.njk`). Cloudflare would otherwise 307 any `+` URL to its `%2B` form, so the same file generates a rewrite rule for each one.
+- The RSS feed subscribers used at `/blog?format=rss` 301s to `/blog/rss.xml` (in `worker.js`, because `_redirects` can't match query strings).
 - File downloads under `/s/` are hosted at their original paths.
 - Pages are generated as `foo.html` (not `foo/index.html`) so canonical URLs have no trailing slash, exactly matching Squarespace.
 
-Tag pages with names differing only by case (e.g. `wwdc` and `WWDC`) collide on macOS's case-insensitive filesystem, so a local `_site/` folds them into one file. Netlify builds on Linux where they are distinct — this only affects local previews.
+Tag pages with names differing only by case (e.g. `wwdc` and `WWDC`) collide on macOS's case-insensitive filesystem, so a local `_site/` folds them into one file. Cloudflare builds on Linux where they are distinct — this only affects local previews.
 
 ## Deploying (done by Zach, manually)
 
-1. Push this repository to GitHub and create a new Netlify site from it. `netlify.toml` supplies the build command, publish directory, and redirects.
-2. Preview the deploy on the `*.netlify.app` URL. Worth checking:
+1. In Cloudflare → Workers & Pages → Create → Import a repository, connect this GitHub repository. Set the build command to `npm run build` and keep the deploy command `npx wrangler deploy`. The Worker name must match `name` in `wrangler.jsonc` (`zachsim-one`). Everything else comes from the repository: `wrangler.jsonc` (assets directory, 404 page, the `/blog?format=rss` Worker), `src/redirects.njk`, and `.node-version`.
+2. Preview the deploy on the `*.workers.dev` URL. Worth checking:
    - a dated post (`/blog/2020/8/4/swiftui-map`) and a flat post (`/blog/airpods`)
-   - a tag URL with a plus sign, e.g. `/blog/tag/Apple+Watch` (confirming Netlify serves `+` paths literally)
+   - a tag URL with a plus sign, e.g. `/blog/tag/Apple+Watch` returns 200, not a redirect to `Apple%2BWatch`
    - `/blog?format=rss` redirects to `/blog/rss.xml`
-3. In Netlify → Domain management, add `zachsim.one` (primary) and `www.zachsim.one`, then point DNS away from Squarespace per Netlify's instructions. Only cancel the Squarespace subscription after DNS has cut over and the checks above pass on the live domain, because the Squarespace CDN image URLs die with the subscription (all images are rehosted locally here, so nothing on this site depends on them).
+   - an empty tag URL, e.g. `/blog/tag/free+speech`, redirects to `/blog`
+3. Add `zachsim.one` to Cloudflare as a site and change the nameservers at Hover to the ones Cloudflare gives you (Worker custom domains need the zone on Cloudflare). Once the zone is active, delete the imported Squarespace records for `zachsim.one` and `www`, add both hostnames as custom domains under the Worker's Settings → Domains & Routes, then create a Redirect Rule from the "Redirect from WWW to root" template. Only cancel the Squarespace subscription after DNS has cut over and the checks above pass on the live domain, because the Squarespace CDN image URLs die with the subscription (all images are rehosted locally here, so nothing on this site depends on them).
 4. After cutover, in Google Search Console submit `https://zachsim.one/sitemap.xml`.
