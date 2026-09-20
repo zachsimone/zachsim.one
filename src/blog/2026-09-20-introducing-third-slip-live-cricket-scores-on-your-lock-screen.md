@@ -1,6 +1,6 @@
 ---
 title: "Introducing Third Slip: Live Cricket Scores on Your iPhone Lock Screen"
-date: 2026-09-20T20:00:00.000+10:00
+date: 2026-09-20T20:15:00.000+10:00
 permalink: "/blog/2026/9/20/introducing-third-slip-live-cricket-scores-on-your-lock-screen.html"
 layout: layouts/post.njk
 image: "/images/bf72467c-f469-432c-a98b-bb1826699b7e/third_slip_hero.png"
